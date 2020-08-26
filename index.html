@@ -42,6 +42,22 @@
     a:link    {text-decoration: none; color: black; }
     a:hover   { color: #ffffff; text-decoration: none; }
     
+    #page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+    
     /* If the screen size is 601px or more, set the font-size of <div> to 80px */
 @media only screen and (min-width: 601px) {
    #main > article {
@@ -76,7 +92,9 @@ img.responsive { height: auto; }
 </style>
 <body>
   <header></header>
-  <div id="main">
+  <div id="page-container">
+   <div id="content-wrap">
+    <div id="main">
       <article><p>Cathedral Design Co.</p>
           <p>hello@CTRLdesign.ca</p>
           <p><a href="https://www.instagram.com/ctrl_dsn_co/" target="_blank">Instagram</a> | <a href="https://twitter.com/CTRL_DSN_CO" target="_blank">Twitter</a></p>
@@ -84,6 +102,8 @@ img.responsive { height: auto; }
          
       </article>
   </div>
+        </div>
  <footer>©Cathedral Design Co. We do not use cookies or track you in any way.</footer>
+    </div>
 </body>
 </html>
