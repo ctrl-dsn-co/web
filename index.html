@@ -54,33 +54,17 @@
   height: 2.5rem;            /* Footer height */
 }
     
-    
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-   #main > article {
-       font-size: 72px;}
-     footer {
-      font-size: 14px;}
-   
-    }
-@media only screen and (min-width: 480px) and (max-width: 767px){
-      font-size: 36px;
-     footer {
-      font-size: 12px;}
-}
-  }
+/* smartphones, iPhone, portrait 480x320 phones */   
+@media (min-width:320px)  {#main > article {
+    font-size: 5em;
+    }}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  #main > article {
-     font-size: 24px;
-    padding-top: 35vh;}
-    }
-    
-    
-@media only screen and (min-width: 0px) and (max-width: 479px) {
- footer {
-     font-size: 10px;}
-    }
-    @media screen and ( max-width: 400px ) {
+@media screen and ( max-width: 400px ) {
 img.responsive { width: 25px; }
 }
 @media screen and ( min-width: 1025px) {
