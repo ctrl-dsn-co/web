@@ -3,7 +3,7 @@
 
 <html>
     <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Cathedral Design Co.</title>
     <link rel="shortcut icon" type="image/png" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@200;300;400&display=swap" rel="stylesheet"> 
@@ -57,12 +57,12 @@
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
 @media only screen and (max-width: 600px) {
  #main {
-     font-size: 30px;}
+     font-size: 60px;}
     
      /* If the screen size is 600px or less, set the font-size of <div> to 30px */
 @media only screen and (max-width: 600px) {
  footer {
-    font-size: 14px;
+    font-size: 24px;
   
 }
 
@@ -73,7 +73,11 @@
       <article><p>Cathedral Design Co.</p>
           <p>hello@CTRLdesign.ca</p>
           <p>Instagram | Twitter</p>
-          <p><img src="eye-ctrl.png" alt="CTRL-DSG-CO"></p> 
+          <picture>
+  <source srcset="eye-ctrl.png" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg">
+  <img src="eye-fullsize.png" alt="Flowers" style="width:auto;">
+</picture>
          
       </article>
   </div>
